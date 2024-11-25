@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.0">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="2049" dy="1066" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="956" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -170,16 +170,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KdCNhbzY0ODFEy59JEJm-12" value="SUBROUTINE: Initialization" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="950" y="290" width="270" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="KdCNhbzY0ODFEy59JEJm-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="KdCNhbzY0ODFEy59JEJm-12" source="KdCNhbzY0ODFEy59JEJm-13">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="330" y="10" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="300" y="39" />
-              <mxPoint x="300" y="10" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="950" y="290" width="270" height="190" as="geometry" />
         </mxCell>
         <mxCell id="KdCNhbzY0ODFEy59JEJm-13" value="&lt;b&gt;call &lt;/b&gt;IC&amp;nbsp;generator subroutine" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-12">
           <mxGeometry y="26" width="270" height="26" as="geometry" />
@@ -187,11 +178,19 @@
         <mxCell id="KdCNhbzY0ODFEy59JEJm-14" value="&lt;b&gt;set &lt;/b&gt;rho, m, rho_E = rho_init, m_init, rho_E_init" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-12">
           <mxGeometry y="52" width="270" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="KdCNhbzY0ODFEy59JEJm-12" source="KdCNhbzY0ODFEy59JEJm-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="91" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="KdCNhbzY0ODFEy59JEJm-15" value="&lt;b&gt;set &lt;/b&gt;phi = phi_init" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-12">
           <mxGeometry y="78" width="270" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="KdCNhbzY0ODFEy59JEJm-16" value="&lt;b&gt;call &lt;/b&gt;boundary condition generator to set BCs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-12">
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-16" value="&lt;b&gt;call &lt;/b&gt;mesh generator to set create mesh" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-12">
           <mxGeometry y="104" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-25" value="&lt;b&gt;call &lt;/b&gt;boundary condition generator to set BCs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-12">
+          <mxGeometry y="130" width="270" height="26" as="geometry" />
         </mxCell>
         <mxCell id="KdCNhbzY0ODFEy59JEJm-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.015;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="78961159f06e98e8-39" target="KdCNhbzY0ODFEy59JEJm-14">
           <mxGeometry relative="1" as="geometry">
@@ -199,12 +198,39 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="KdCNhbzY0ODFEy59JEJm-18" value="SUBROUTINE: IC generator" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="1290" y="280" width="270" height="80" as="geometry" />
+          <mxGeometry x="1310" y="230" width="270" height="80" as="geometry" />
         </mxCell>
         <mxCell id="KdCNhbzY0ODFEy59JEJm-19" value="&lt;b&gt;INPUTS: &lt;/b&gt;numnp, xnode" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-18">
           <mxGeometry y="26" width="270" height="26" as="geometry" />
         </mxCell>
         <mxCell id="KdCNhbzY0ODFEy59JEJm-20" value="&lt;b&gt;OUTPUTS: &lt;/b&gt;rho_init, m_init, rho_E_init, phi_init" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-18">
+          <mxGeometry y="52" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="KdCNhbzY0ODFEy59JEJm-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1300" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1240" y="329" />
+              <mxPoint x="1240" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-26" value="SUBROUTINE: Mesh generator" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1310" y="330" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-27" value="&lt;b&gt;INPUTS: &lt;/b&gt;numel, L" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-26">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-28" value="&lt;b&gt;OUTPUTS: &lt;/b&gt;xnode" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-26">
+          <mxGeometry y="52" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-31" value="SUBROUTINE: BC generator" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="1310" y="440" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-32" value="&lt;b&gt;INPUTS: &lt;/b&gt;rho, m, rho_E, phi, numnp, xnode" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-31">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="KdCNhbzY0ODFEy59JEJm-33" value="&lt;b&gt;OUTPUTS: &lt;/b&gt;BCs applied&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="KdCNhbzY0ODFEy59JEJm-31">
           <mxGeometry y="52" width="270" height="26" as="geometry" />
         </mxCell>
       </root>
