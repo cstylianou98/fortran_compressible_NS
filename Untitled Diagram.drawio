@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.0">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
-    <mxGraphModel dx="1323" dy="833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1134" dy="714" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -226,8 +226,8 @@
         <mxCell id="C4s-Qj1KareKIEgdKSLW-19" value="&lt;b&gt;OUTPUTS: &lt;/b&gt;rhs_g_rho, rhs_g_m, rhs_g_rho_E" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C4s-Qj1KareKIEgdKSLW-16">
           <mxGeometry y="52" width="270" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="C4s-Qj1KareKIEgdKSLW-25" value="SUBROUTINE: Assemble F_lps&amp;nbsp; matrix" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="950" y="890" width="270" height="80" as="geometry" />
+        <mxCell id="C4s-Qj1KareKIEgdKSLW-25" value="SUBROUTINE: Assemble F_visc&amp;nbsp; matrix" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="960" y="1020" width="270" height="80" as="geometry" />
         </mxCell>
         <mxCell id="C4s-Qj1KareKIEgdKSLW-26" value="&lt;b&gt;INPUTS: &lt;/b&gt;rho, m, rho_E, g N_mef, Nxi_mef, wpg" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C4s-Qj1KareKIEgdKSLW-25">
           <mxGeometry y="26" width="270" height="26" as="geometry" />
@@ -246,6 +246,15 @@
         </mxCell>
         <mxCell id="C4s-Qj1KareKIEgdKSLW-28" value="SUBROUTINE: TDMA solver" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
           <mxGeometry x="1290" y="730" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="C4s-Qj1KareKIEgdKSLW-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="C4s-Qj1KareKIEgdKSLW-28" source="C4s-Qj1KareKIEgdKSLW-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="-30" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="39" />
+              <mxPoint x="300" y="-30" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="C4s-Qj1KareKIEgdKSLW-29" value="&lt;b&gt;INPUTS: &lt;/b&gt;Mass matrix, rhs_lps_matrix" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C4s-Qj1KareKIEgdKSLW-28">
           <mxGeometry y="26" width="270" height="26" as="geometry" />
@@ -288,6 +297,26 @@
         </mxCell>
         <mxCell id="C4s-Qj1KareKIEgdKSLW-40" value="&lt;b&gt;MAIN PROGRAM&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="110" y="600" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C4s-Qj1KareKIEgdKSLW-52" value="SUBROUTINE: Assemble F_lps&amp;nbsp; matrix" style="swimlane;html=1;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=none;fontFamily=Verdana;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="960" y="900" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="C4s-Qj1KareKIEgdKSLW-53" value="&lt;b&gt;INPUTS: &lt;/b&gt;rho, m, rho_E, g N_mef, Nxi_mef, wpg" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C4s-Qj1KareKIEgdKSLW-52">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="C4s-Qj1KareKIEgdKSLW-54" value="&lt;b&gt;OUTPUTS:&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C4s-Qj1KareKIEgdKSLW-52">
+          <mxGeometry y="52" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="C4s-Qj1KareKIEgdKSLW-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="1070" as="targetPoint" />
+            <mxPoint x="810" y="890.0000000000002" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="860" y="890" />
+              <mxPoint x="860" y="1070" />
+              <mxPoint x="910" y="1070" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
