@@ -1,0 +1,5 @@
+/root/fortran/compressible_ns_code/build/CMakeFiles/edit_cache.dir
+/root/fortran/compressible_ns_code/build/CMakeFiles/rebuild_cache.dir
+/root/fortran/compressible_ns_code/build/src/CMakeFiles/my_compressible_solver.dir
+/root/fortran/compressible_ns_code/build/src/CMakeFiles/edit_cache.dir
+/root/fortran/compressible_ns_code/build/src/CMakeFiles/rebuild_cache.dir

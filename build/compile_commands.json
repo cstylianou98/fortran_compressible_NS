@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/root/fortran/compressible_ns_code/build/src",
+  "command": "/usr/bin/gfortran  -I/root/fortran/compressible_ns_code/build/src -g -c /root/fortran/compressible_ns_code/src/global_variables.f90 -o CMakeFiles/my_compressible_solver.dir/global_variables.f90.o",
+  "file": "/root/fortran/compressible_ns_code/src/global_variables.f90"
+},
+{
+  "directory": "/root/fortran/compressible_ns_code/build/src",
+  "command": "/usr/bin/gfortran  -I/root/fortran/compressible_ns_code/build/src -g -c /root/fortran/compressible_ns_code/src/initialize_globals.f90 -o CMakeFiles/my_compressible_solver.dir/initialize_globals.f90.o",
+  "file": "/root/fortran/compressible_ns_code/src/initialize_globals.f90"
+},
+{
+  "directory": "/root/fortran/compressible_ns_code/build/src",
+  "command": "/usr/bin/gfortran  -I/root/fortran/compressible_ns_code/build/src -g -c /root/fortran/compressible_ns_code/src/generate_xnode.f90 -o CMakeFiles/my_compressible_solver.dir/generate_xnode.f90.o",
+  "file": "/root/fortran/compressible_ns_code/src/generate_xnode.f90"
+},
+{
+  "directory": "/root/fortran/compressible_ns_code/build/src",
+  "command": "/usr/bin/gfortran  -I/root/fortran/compressible_ns_code/build/src -g -c /root/fortran/compressible_ns_code/src/pre_fem_inputs.f90 -o CMakeFiles/my_compressible_solver.dir/pre_fem_inputs.f90.o",
+  "file": "/root/fortran/compressible_ns_code/src/pre_fem_inputs.f90"
+},
+{
+  "directory": "/root/fortran/compressible_ns_code/build/src",
+  "command": "/usr/bin/gfortran  -I/root/fortran/compressible_ns_code/build/src -g -c /root/fortran/compressible_ns_code/src/shock_tube_init.f90 -o CMakeFiles/my_compressible_solver.dir/shock_tube_init.f90.o",
+  "file": "/root/fortran/compressible_ns_code/src/shock_tube_init.f90"
+},
+{
+  "directory": "/root/fortran/compressible_ns_code/build/src",
+  "command": "/usr/bin/gfortran  -I/root/fortran/compressible_ns_code/build/src -g -c /root/fortran/compressible_ns_code/src/phi_initialize.f90 -o CMakeFiles/my_compressible_solver.dir/phi_initialize.f90.o",
+  "file": "/root/fortran/compressible_ns_code/src/phi_initialize.f90"
+},
+{
+  "directory": "/root/fortran/compressible_ns_code/build/src",
+  "command": "/usr/bin/gfortran  -I/root/fortran/compressible_ns_code/build/src -g -c /root/fortran/compressible_ns_code/src/config_simulation.f90 -o CMakeFiles/my_compressible_solver.dir/config_simulation.f90.o",
+  "file": "/root/fortran/compressible_ns_code/src/config_simulation.f90"
+}
+]
